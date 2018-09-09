@@ -130,7 +130,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener{
 		g.drawString("BEEP INVADERS!", 30, 50);
 		g.setFont(fsub);
 		g.setColor(Color.GREEN);
-		g.drawString("SPACE for instructions, ENTER to play!", 30, 80);
+		g.drawString("ENTER to play!", 30, 80);
 	}
 	void drawGameState(Graphics g) {
         g.drawImage(GamePanel.spaceImg, 0, 0, BEEPInvadersPLAYER.width, BEEPInvadersPLAYER.height, null);

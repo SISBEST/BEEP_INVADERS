@@ -12,7 +12,7 @@ public class BEEPInvadersPLAYER {
 		li.setup();
 	}
 	BEEPInvadersPLAYER(){
-		f = new JFrame();
+		f = new JFrame("BEEP INVADERS!");
 	}
 	void setup() {
 		f.add(gp);
