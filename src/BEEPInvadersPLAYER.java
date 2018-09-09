@@ -2,16 +2,16 @@ import java.awt.Dimension;
 
 import javax.swing.*;
 
-public class LeagueInvaders {
+public class BEEPInvadersPLAYER {
 	JFrame f;
 	final static int width = 500;
 	final static int height = 800;
 	GamePanel gp = new GamePanel();
 	public static void main(String[] args) {
-		LeagueInvaders li = new LeagueInvaders();
+		BEEPInvadersPLAYER li = new BEEPInvadersPLAYER();
 		li.setup();
 	}
-	LeagueInvaders(){
+	BEEPInvadersPLAYER(){
 		f = new JFrame();
 	}
 	void setup() {

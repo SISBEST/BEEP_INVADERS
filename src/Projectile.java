@@ -12,10 +12,10 @@ public class Projectile extends GameObject{
 		if(y < 0) {
 			isAlive = false;
 		}
+		super.update();
     }
     void draw(Graphics g) {
-    	g.setColor(Color.RED);
-    g.fillRect(x, y, width, height);
+        g.drawImage(GamePanel.bulletImg, x, y, width, height, null);
     }
 
 }
