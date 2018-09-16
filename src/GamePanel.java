@@ -123,28 +123,31 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener{
 	
 }
 	void drawMenuState(Graphics g) {
-		g.setColor(Color.BLUE);
-		g.fillRect(0, 0, BEEPInvadersPLAYER.width, BEEPInvadersPLAYER.height); 
+		g.setColor(Color.BLACK);
+		g.fillRect(0, 0, STALAG13InvadersPLAYER.width, STALAG13InvadersPLAYER.height); 
 		g.setFont(titleFont);
-		g.setColor(Color.CYAN);
-		g.drawString("BEEP INVADERS!", 30, 50);
+		g.setColor(Color.BLUE);
+		g.drawString("STALAG 13 INVADERS!", 30, 50);
 		g.setFont(fsub);
-		g.setColor(Color.GREEN);
+		g.setColor(Color.BLUE);
 		g.drawString("ENTER to play!", 30, 80);
+		g.drawString("Press SPACE to visit Klink's office", 30, 140);
+		g.drawString("and try and trick him! Use arrow keys to move.", 30, 170);
+		g.drawString("Good metaphor for Space Invaders!", 30, 230);
 	}
 	void drawGameState(Graphics g) {
-        g.drawImage(GamePanel.spaceImg, 0, 0, BEEPInvadersPLAYER.width, BEEPInvadersPLAYER.height, null);
+        g.drawImage(GamePanel.spaceImg, 0, 0, STALAG13InvadersPLAYER.width, STALAG13InvadersPLAYER.height, null);
 		om.draw(g);
 	}
 	void drawEndState(Graphics g) {
 		g.setColor(Color.RED);
-		g.fillRect(0, 0, BEEPInvadersPLAYER.width, BEEPInvadersPLAYER.height); 
+		g.fillRect(0, 0, STALAG13InvadersPLAYER.width, STALAG13InvadersPLAYER.height); 
 		g.setFont(titleFont);
 		g.setColor(Color.BLACK);
 		g.drawString("GAME OVER", 30, 50);
 		g.setFont(fsub);
 		g.setColor(Color.GREEN);
-		g.drawString("You killed " + om.score + " enemies!", 30, 80);
+		g.drawString("You tricked Klink " + om.score + " times", 30, 80);
 		g.drawString("Press ENTER to return to main menu.", 30, 100);
 }
 }

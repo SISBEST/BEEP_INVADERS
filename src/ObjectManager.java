@@ -40,7 +40,7 @@ public class ObjectManager {
 
 public void manageEnemies(){
         if(System.currentTimeMillis() - enemyTimer >= enemySpawnTime){
-                addAlien(new Alien(new Random().nextInt(BEEPInvadersPLAYER.width), 0, 50, 50));
+                addAlien(new Alien(new Random().nextInt(STALAG13InvadersPLAYER.width), 0, 50, 50));
 
 enemyTimer = System.currentTimeMillis();
         }
